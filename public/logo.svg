@@ -1,0 +1,83 @@
+<svg width="400" height="400" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    /* Center node appears first */
+    .center-node {
+      opacity: 0;
+      transform-origin: center;
+      animation: popIn 0.6s ease-out forwards;
+      animation-delay: 0.2s;
+    }
+    
+    /* Edges draw out from center */
+    .edge {
+      stroke-dasharray: 200;
+      stroke-dashoffset: 200;
+      animation: drawEdge 0.5s ease-out forwards;
+    }
+    
+    .edge-1 { animation-delay: 0.8s; }
+    .edge-2 { animation-delay: 1.0s; }
+    .edge-3 { animation-delay: 1.2s; }
+    .edge-4 { animation-delay: 1.4s; }
+    .edge-5 { animation-delay: 1.6s; }
+    .edge-6 { animation-delay: 1.8s; }
+    
+    @keyframes drawEdge {
+      to {
+        stroke-dashoffset: 0;
+      }
+    }
+    
+    /* Outer nodes pop up after their edge */
+    .outer-node {
+      opacity: 0;
+      transform-origin: center;
+      animation: popIn 0.5s ease-out forwards;
+    }
+    
+    .node-1 { animation-delay: 1.2s; }
+    .node-2 { animation-delay: 1.4s; }
+    .node-3 { animation-delay: 1.6s; }
+    .node-4 { animation-delay: 1.8s; }
+    .node-5 { animation-delay: 2.0s; }
+    .node-6 { animation-delay: 2.2s; }
+    
+    @keyframes popIn {
+      0% {
+        opacity: 0;
+        transform: scale(0);
+      }
+      60% {
+        transform: scale(1.2);
+      }
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+    
+    /* Glow effect */
+    circle {
+      filter: drop-shadow(0 0 10px currentColor);
+    }
+  </style>
+  
+  <!-- Edges (draw from center outward) -->
+  <line class="edge edge-1" x1="200" y1="200" x2="200" y2="80" stroke="#a78bfa" stroke-width="3"/>
+  <line class="edge edge-2" x1="200" y1="200" x2="320" y2="140" stroke="#60a5fa" stroke-width="3"/>
+  <line class="edge edge-3" x1="200" y1="200" x2="320" y2="260" stroke="#22d3ee" stroke-width="3"/>
+  <line class="edge edge-4" x1="200" y1="200" x2="200" y2="320" stroke="#f472b6" stroke-width="3"/>
+  <line class="edge edge-5" x1="200" y1="200" x2="80" y2="260" stroke="#4ade80" stroke-width="3"/>
+  <line class="edge edge-6" x1="200" y1="200" x2="80" y2="140" stroke="#fb923c" stroke-width="3"/>
+  
+  <!-- Center node (appears first) -->
+  <circle class="center-node" cx="200" cy="200" r="25" fill="#fbbf24" stroke="white" stroke-width="4"/>
+  
+  <!-- Outer nodes (pop up after edges) -->
+  <circle class="outer-node node-1" cx="200" cy="80" r="20" fill="#a78bfa" stroke="white" stroke-width="3"/>
+  <circle class="outer-node node-2" cx="320" cy="140" r="20" fill="#60a5fa" stroke="white" stroke-width="3"/>
+  <circle class="outer-node node-3" cx="320" cy="260" r="20" fill="#22d3ee" stroke="white" stroke-width="3"/>
+  <circle class="outer-node node-4" cx="200" cy="320" r="20" fill="#f472b6" stroke="white" stroke-width="3"/>
+  <circle class="outer-node node-5" cx="80" cy="260" r="20" fill="#4ade80" stroke="white" stroke-width="3"/>
+  <circle class="outer-node node-6" cx="80" cy="140" r="20" fill="#fb923c" stroke="white" stroke-width="3"/>
+</svg>
