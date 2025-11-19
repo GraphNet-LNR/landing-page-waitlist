@@ -163,7 +163,7 @@ export default function Landing() {
                 className="hero-left-para lead mb-4 fs-4 fade-in-up"
                 style={{ animationDelay: "0.3s" }}
               >
-                Stop sending cold messages. GraphSocial analyzes your LinkedIn
+                Stop sending cold messages. GraphNet analyzes your LinkedIn
                 network to find who can introduce you to anyone.
               </p>
               <div
@@ -182,7 +182,7 @@ export default function Landing() {
                 className="text-white-50 mt-4 fade-in-up"
                 style={{ animationDelay: "0.6s" }}
               >
-                ⭐ Trusted by 500+ professionals
+                ⭐ Trusted by Students & Professionals
               </p>
             </div>
 
@@ -202,7 +202,7 @@ export default function Landing() {
               >
                 <Image
                   src="/Hero-img.png"
-                  alt="GraphSocial Chrome Extension"
+                  alt="GraphNet Chrome Extension"
                   fill
                   style={{
                     objectFit: "cover",
@@ -244,8 +244,8 @@ export default function Landing() {
                 className="lead text-muted mb-4 animate-on-scroll fade-in-up"
                 style={{ animationDelay: "0.15s" }}
               >
-                GraphSocial maps your entire LinkedIn network and finds the
-                shortest path to connect you with anyone.
+                GraphNet maps your entire network and finds the shortest path to
+                connect you with anyone.
               </p>
 
               <div
@@ -365,7 +365,7 @@ export default function Landing() {
         <div className="container py-5">
           <div className="row text-center mb-5">
             <div className="col animate-on-scroll fade-in-up">
-              <h2 className="display-5 fw-bold">Why GraphSocial?</h2>
+              <h2 className="display-5 fw-bold">Why GraphNet?</h2>
               <p className="lead text-muted">
                 Transform your LinkedIn networking
               </p>
